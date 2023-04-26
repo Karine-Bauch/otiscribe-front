@@ -29,7 +29,9 @@ const router = createRouter({
     //   // which is lazy-loaded when the route is visited.
     //   component: () => import('../views/AboutView.vue')
     // }
-  ]
+  ],
+  linkExactActiveClass: 'font-bold border-second-green border-b-3 text-second-green hover:bg-transparent hover:border-transparent',
+  
 });
 
 export default router;

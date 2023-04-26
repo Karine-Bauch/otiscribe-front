@@ -29,7 +29,7 @@
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
             <!-- Current: "border-second-green text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-            <RouterLink v-for="item in navigation" :key="item.id" :to="item.href" v-on:click="isCurrent(item.id)" :class="[item.current ? 'inline-flex items-center border-second-green border-b-3 px-2 pt-1 text-md font-medium text-gray-900' : 'inline-flex items-center border-transparent text-md font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</RouterLink>
+            <RouterLink v-for="item in navigation" :key="item.id" :to="item.href" class="inline-flex items-center px-2 pt-1 text-md hover:font-bold text-gray-500 hover:bg-gray-50 hover:border-b-3 hover:border-gray-400" >{{ item.name }}</RouterLink>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 pb-4 pt-2">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-        <RouterLink v-for="item in navigation" :key="item.id" :to="item.href" v-on:click="isCurrent(item.id)" :class="[item.current ? 'block border-l-4 border-second-green bg-xtralight-green py-2 pl-3 pr-4 text-base font-medium text-main-green' : 'block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700']">{{ item.name }}</RouterLink>
+        <RouterLink v-for="item in navigation" :key="item.id" :to="item.href" class="block py-2 pl-3 pr-4 text-base font-medium text-gray-500">{{ item.name }}</RouterLink>
       </div>
     </DisclosurePanel>
   </Disclosure>
@@ -49,23 +49,22 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline';
 import { RouterLink } from 'vue-router';
 
-const navigation = [
+let navigation = [
   { id: 0, name: 'Home', href: '/', current: true },
   { id: 1, name: 'Otis en action', href: '/otis', current: false },
   { id: 2, name: 'Contact', href: '/contact', current: false },
 ];
 
-function isCurrent(id: number) : void {
+console.log(navigation.find((item) => item.current === true));
+
+const isCurrent = (id: number) => {
   navigation.forEach((item) => {
-    if (item.id !== id) {
-      item.current = false;
-    } else {
+    if (item.id === id) {
       item.current = true;
+    } else {
+      item.current = false;
     }
   });
-
   console.log(navigation);
-}
-
-console.log(navigation);
+};
 </script>

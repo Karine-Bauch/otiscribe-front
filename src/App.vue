@@ -7,7 +7,7 @@ import FooterItem from './components/Footer.vue';
 
 <template>
   <header>
-    <HeaderItem/>
+    <HeaderItem />
   </header>
 
   <RouterView />
