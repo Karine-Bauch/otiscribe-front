@@ -10,6 +10,7 @@ module.exports = {
         'main-green': '#40916C',
         'second-green': '#52B788',
         'xtralight-green': "#F3FFF5",
+        'xtralight-gray': "#FCFCFC",
       },
       borderWidth: {
         '3': '3px',

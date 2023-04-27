@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden bg-white py-24 sm:py-32">
+  <div id="demo" class="overflow-hidden bg-white py-24 sm:py-24">
     <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
         <div class="px-6 md:px-0 lg:pr-4 lg:pt-4">
@@ -19,10 +19,19 @@
             </dl>
           </div>
         </div>
-        <div class="my-auto sm:px-6 lg:px-0">
-          <div class="rounded-lg py-60 text-white text-center bg-second-green h-auto">Vidéo Démo</div>
+        <div class="max-sm:hidden my-auto">
+          <div class="rounded-lg h-full">
+            <video class="rounded-lg w-auto border-2 border-xtralight-green" src="../assets/otiscribe-desktop.mp4" controls/>
+          </div>
+        </div>
+        
+        <div class="sm:hidden">
+            <video class="rounded-lg" src="../assets/otiscribe-mobile.mp4" controls/>
         </div>
       </div>
+    </div>
+    <div class="mt-20 flex items-center justify-center gap-x-6">
+      <a href="mailto:karine.bauch.web@gmail.com" class="rounded-md bg-second-green px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-main-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Je veux plus d'infos !</a>
     </div>
   </div>
 </template>
