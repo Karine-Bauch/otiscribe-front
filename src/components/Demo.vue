@@ -30,7 +30,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-20 flex items-center justify-center gap-x-6">
+    <div class="mt-10 flex items-center justify-center gap-x-6">
       <a href="mailto:karine.bauch.web@gmail.com" class="rounded-md bg-second-green px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-main-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Je veux plus d'infos !</a>
     </div>
   </div>

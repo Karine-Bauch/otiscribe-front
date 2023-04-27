@@ -55,16 +55,4 @@ let navigation = [
   { id: 2, name: 'Contact', href: '/contact', current: false },
 ];
 
-console.log(navigation.find((item) => item.current === true));
-
-const isCurrent = (id: number) => {
-  navigation.forEach((item) => {
-    if (item.id === id) {
-      item.current = true;
-    } else {
-      item.current = false;
-    }
-  });
-  console.log(navigation);
-};
 </script>
