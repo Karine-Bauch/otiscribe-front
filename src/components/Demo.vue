@@ -36,7 +36,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { PencilSquareIcon, CheckIcon, DocumentTextIcon, ArrowRightCircleIcon } from '@heroicons/vue/20/solid';
 
 const features = [

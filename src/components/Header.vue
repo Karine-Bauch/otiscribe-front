@@ -17,10 +17,10 @@
           </DisclosureButton>
         </div>
         <div class="flex flex-1 items-center justify-start sm:items-stretch sm:justify-start ml-3">
-          <div class="flex flex-shrink-0 items-center">
+          <a href="/" class="flex flex-shrink-0 items-center">
             <img class="block h-8 w-auto lg:hidden" src="../assets/le-scribe-assis-2.png" alt="Your Company" href=""/>
             <img class="hidden h-8 w-auto lg:block" src="../assets/le-scribe-assis-2.png" alt="Your Company" />
-          </div>
+          </a>
           <div class="sm:hidden bg-white px-6 py- sm:py-4 lg:px-8">
             <div class="mx-auto max-w-2xl">
               <h2 class="text-3xl font-semibold tracking-tight text-main-green sm:text-2xl">OtiScribe</h2>
@@ -44,15 +44,14 @@
   </Disclosure>
 </template>
 
-<script lang="ts" setup>
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline';
+<script setup lang="ts">
+import { Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/vue';
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 import { RouterLink } from 'vue-router';
 
 let navigation = [
   { id: 0, name: 'Home', href: '/', current: true },
-  { id: 1, name: 'Otis en action', href: '/otis', current: false },
+  { id: 1, name: 'Otis En Action', href: '/otis', current: false },
   { id: 2, name: 'Contact', href: '/contact', current: false },
 ];
-
 </script>

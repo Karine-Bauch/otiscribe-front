@@ -15,6 +15,9 @@ module.exports = {
       borderWidth: {
         '3': '3px',
       },
+      backgroundImage: {
+        'otisHome': "url('./src/assets/otisHome.png')",
+      }
     },
   },
   plugins: [],

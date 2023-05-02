@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <h2 class="text-md text-main-green font-bold">Votre lettre médicale</h2>
+    <h2 class="text-lg font-medium text-main-green font-bold">Votre compte-rendu</h2>
     <div class="relative mt-2 p-3 outline outline-second-green rounded-md">
 
         <!-- <div ref="textToCopy" class="p-4 bg-gray-200">Texte à copier</div> -->
@@ -9,10 +9,10 @@
         {{ result }}
 
         <p class="text-base font-light italic text-gray-500">
-          <div>_</div><br>
+          <div>______</div><br>
           <span class="italic text-bold underline">Avertissement :</span> <br>
-          Les définitions fournies dans cette lettre médicale ont été générées automatiquement et peuvent contenir des erreurs. <br>
-          Toute incompréhension ou doute sur leur signification doit faire l’objet d’une question à votre médecin.
+          Les définitions fournies ont été générées automatiquement et peuvent contenir des erreurs. <br>
+          Toute incompréhension ou doute sur leur signification doit faire l’objet d'une vérification ou d’une demande auprès du professionnel concerné.
         </p>
       </div>
     </div>

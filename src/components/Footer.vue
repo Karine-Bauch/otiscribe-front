@@ -18,7 +18,7 @@
   </footer>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { defineComponent, h } from 'vue';
 import { EnvelopeIcon } from '@heroicons/vue/24/solid';
 

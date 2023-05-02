@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import Demand from '../components/Demand.vue';
-</script>
-
 <template>
   <div class="px-6 mx-auto max-w-7xl ">
     <div class="mt-6 rounded-lg bg-second-green max-w-7xl mx-auto">
@@ -21,3 +17,7 @@ import Demand from '../components/Demand.vue';
     <Demand />
   </div>
 </template>
+
+<script setup lang="ts">
+import Demand from '../components/Demand.vue';
+</script>
